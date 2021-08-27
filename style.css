@@ -1,0 +1,151 @@
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+    width: 95%;
+}
+#btn{
+    background-color: transparent;
+    border-radius: 7px;
+    border-color: rgb(red, green, blue);
+    border-width: 3px;
+    color: #6a8b9e;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+    margin-top: 8%;
+}
+#colorsGen{
+    width: 100%;
+    text-align: center;
+}
+  
+  #colorsGen h1, h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    -ms-animation: colorchange 5s infinite alternate;
+    -moz-animation: colorchange 5s infinite alternate;
+    -o-animation: colorchange 5s infinite alternate; 
+    animation: colorchange 5s infinite alternate; 
+  }
+  
+  #colorsGen h2{
+    margin-top: 8%;
+    text-transform: lowercase;
+  }
+  
+  @-ms-keyframes colorchange{
+    0% {
+          color: #ffffff;
+        }
+        
+        20% {
+          color: #cccccc;
+        }
+        
+        40% {
+          color: #999999;
+        }
+        
+        60% {
+          color: #666666;
+        }
+        
+        80% {
+          color: #333333;
+        }
+        
+        100% {
+          color: #000000;
+        } 
+  }
+  
+  @-moz-keyframes colorchange{
+      0% {
+          color: #ffffff;
+        }
+        
+        20% {
+          color: #cccccc;
+        }
+        
+        40% {
+          color: #999999;
+        }
+        
+        60% {
+          color: #666666;
+        }
+        
+        80% {
+          color: #333333;
+        }
+        
+        100% {
+          color: #000000;
+        } 
+  }
+  
+  @-o-keyframes colorchange{
+      0% {
+          color: #ffffff;
+        }
+        
+        20% {
+          color: #cccccc;
+        }
+        
+        40% {
+          color: #999999;
+        }
+        
+        60% {
+          color: #666666;
+        }
+        
+        80% {
+          color: #333333;
+        }
+        
+        100% {
+          color: #000000;
+        }  
+  }
+  
+  @keyframes colorchange {
+      0% {
+          color: #ffffff;
+        }
+        
+        20% {
+          color: #cccccc;
+        }
+        
+        40% {
+          color: #999999;
+        }
+        
+        60% {
+          color: #666666;
+        }
+        
+        80% {
+          color: #333333;
+        }
+        
+        100% {
+          color: #ffffff;
+        }  
+  }
+  
+  @media(max-width:480px){
+    #colorsGen h1{font-size: 1.5rem;}
+    
+    #colorsGen h2{font-size: 1.5rem;}
+  }
+  
+  
