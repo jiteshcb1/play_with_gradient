@@ -15,3 +15,29 @@ btn.addEventListener('click', () => {
     document.querySelector('#hexCode2').textContent = hexCode2;
 });
 
+const span1 = document.querySelector("#hexCode1");
+span1.onclick = function() {
+document.execCommand("copy");
+}
+span1.addEventListener("copy", function(event) {
+event.preventDefault();
+// alert('text copied')
+if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", span1.textContent);
+    console.log(event.clipboardData.getData("text"))
+}
+});
+
+
+const span2 = document.querySelector("#hexCode2");
+span2.onclick = function() {
+document.execCommand("copy");
+}
+span2.addEventListener("copy", function(event) {
+event.preventDefault();
+// alert('text copied')
+if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", span2.textContent);
+    console.log(event.clipboardData.getData("text"))
+}
+});
